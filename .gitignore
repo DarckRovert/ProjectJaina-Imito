@@ -6,6 +6,8 @@
 *.dex
 *.class
 *.idsig
+releases/*.zip
+releases/*.apk
 
 # Intermediate caches
 .gradle/

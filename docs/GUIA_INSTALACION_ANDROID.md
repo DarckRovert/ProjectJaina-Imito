@@ -11,80 +11,85 @@ Bienvenido a **ProjectJaina-Imito**, la edición móvil oficial de World of Warc
 | **Sistema Operativo** | Android 12 | Android 13, 14 o 15 |
 | **Arquitectura CPU** | ARM64 (64 bits) | Snapdragon 870 / 888 / 8 Gen 1 / Gen 2 / Gen 3 o Dimensity 8000+ |
 | **Memoria RAM** | 6 GB RAM | 8 GB RAM o superior |
-| **Almacenamiento Libre** | 25 GB libres | 35 GB+ en almacenamiento interno rápido (UFS 3.1 / 4.0) |
-| **Cliente de Juego** | Cualquier cliente WoW 3.3.5a completo | Cliente Project Jaina FHD Remasterizado |
+| **Almacenamiento Libre** | 18 GB libres (Modo Óptimo) | 38 GB libres (Modo HD) en almacenamiento interno (UFS 3.1 / 4.0) |
+| **Cliente de Juego** | Cualquier cliente WoW 3.3.5a con `Data/` | Cliente Oficial Project Jaina |
 
 > [!IMPORTANT]
 > Se requiere un procesador ARM64 de 64 bits con Android 12 o posterior. Dispositivos de 32 bits no son compatibles.
 
 ---
 
-## 2. Paso a Paso de Instalación
+## 2. Método Recomendado: Asistente Automatizado USB 1-Clic (Windows)
+
+El método más rápido, seguro y libre de errores. No requiere comandos manuales ni navegar por los menús de ajustes del teléfono.
+
+1. **Activar Depuración USB en tu Android:**
+   * Ve a **Ajustes > Información del Teléfono** y pulsa 7 veces consecutivas sobre **"Número de compilación"**.
+   * Ve a **Ajustes > Opciones de desarrollador** y activa **"Depuración USB"**.
+2. **Conectar por USB al PC:**
+   * Conecta tu teléfono mediante cable USB a tu PC Windows.
+   * Si aparece en la pantalla del móvil el mensaje *¿Permitir depuración por USB desde este equipo?*, marca **"Permitir siempre"** y pulsa **Aceptar**.
+3. **Ejecutar el Asistente:**
+   * Haz doble clic en [`Instalador_ProjectJaina_Android.bat`](file:///E:/ProjectJaina_Lab/ProjectJaina-Imito/Instalador_ProjectJaina_Android.bat) (o descomprime `ProjectJaina-Imito-Asistente-USB.zip`).
+   * El asistente:
+     * Validará tu dispositivo y memoria disponible.
+     * Instalará la APK oficial con firma criptográfica v3.
+     * Concederá de forma desatendida el permiso de almacenamiento.
+     * Te permitirá elegir entre el **Modo Móvil Óptimo (~16 GB)** (60 FPS sin cierres de RAM) o **Modo HD**.
+     * Transferirá los archivos mediante ADB por bloques a alta velocidad.
+     * Inyectará el `realmlist.wtf` del servidor seleccionado y el `Config.wtf` calibrado con cursor táctil de software (`gxCursor "0"`).
+4. **¡Listo!** Desconecta el cable y abre la app en tu móvil.
+
+---
+
+## 3. Método Alternativo: Instalación Manual
+
+Si no deseas utilizar el asistente de PC, puedes realizar la instalación de forma manual:
 
 ### Paso 1: Instalar la APK Oficial
-1. Transfiere o descarga el archivo [`ProjectJaina-Imito-v1.0.apk`](file:///E:/ProjectJaina_Lab/ProjectJaina-Imito/releases/ProjectJaina-Imito-v1.0.apk) en tu teléfono o tableta.
+1. Transfiere o descarga el archivo [`ProjectJaina-Imito-v1.0.apk`](file:///E:/ProjectJaina_Lab/ProjectJaina-Imito/releases/ProjectJaina-Imito-v1.0.apk) en tu dispositivo.
 2. Abre tu administrador de archivos y toca el instalador `.apk`.
-3. Si el sistema te lo solicita, activa **"Permitir desde esta fuente"**.
-4. Completa la instalación. **No abras el juego aún** hasta transferir los archivos de juego.
+3. Concede el permiso **"Permitir desde esta fuente"** y completa la instalación.
 
 ### Paso 2: Conceder el Permiso de Almacenamiento Completo
-Android 12+ requiere permiso de gestión de archivos externa para que Wine y Box64 puedan leer los archivos `.MPQ`:
+Android 12+ requiere permiso de gestión de archivos externa:
 1. Ve a **Ajustes de Android > Aplicaciones > ProjectJaina-Imito > Permisos**.
-2. Selecciona **Archivos y contenido multimedia** (o Acceso a todos los archivos).
-3. Marca **"Permitir administrar todos los archivos"**.
+2. Selecciona **Acceso a todos los archivos** y marca **"Permitir administrar todos los archivos"**.
 
-### Paso 3: Transferir la Carpeta del Cliente WoW desde tu PC
-Conecta tu teléfono a tu ordenador mediante un cable USB tipo C (Modo Transferencia de Archivos / MTP):
-
-1. En el almacenamiento interno de tu teléfono, navega a la carpeta:
-   ```
+### Paso 3: Crear Carpetas y Transferir Archivos
+1. En el almacenamiento interno de tu dispositivo, crea la ruta exacta:
+   ```text
    Almacenamiento interno / WoW-Imito / Client /
    ```
-   *(Si la carpeta no existe, créala manualmente respetando mayúsculas y minúsculas).*
-2. Copia dentro de `Client` el contenido de tu cliente WoW de PC:
-   * La carpeta **`Data/`** (con sus archivos `.MPQ` y la subcarpeta `esES` o `enUS`).
-   * La carpeta **`Interface/`** (con tus AddOns preferidos).
-   * El ejecutable **`Wow.exe`** de 3.3.5a.
-
-> [!TIP]
-> **Transferencia Ultrarrápida:** Para evitar demoras transfiriendo miles de archivos pequeños, se recomienda comprimir la carpeta en un único archivo `.zip` en la PC, transferirlo al teléfono y descomprimirlo directamente allí con ZArchiver o la app de Archivos de tu móvil.
-
----
-
-## 3. Conexión a los Reinos de Project Jaina
-
-Al abrir **ProjectJaina-Imito**, la aplicación detectará automáticamente tu cliente dentro de `Client/`.
-
-### Configuración del Servidor (Realmlist):
-1. En la pantalla principal de la aplicación, toca el icono de engranaje (**Ajustes**) o toca sobre el nombre del cliente reconocido.
-2. Selecciona **Set realm** (Configurar reino).
-3. Introduce la dirección de acuerdo a tu modo de juego:
-
-* **Opción A — Conexión Global Oficial (Cero VPN / Sin puertos abiertos):**
-  ```text
-  ambulance-ergonomic.tun.ply.gg
-  ```
-  *(Recomendado para jugar fuera de casa con datos móviles 4G/5G o WiFi remota).*
-
-* **Opción B — Conexión WiFi en Casa (Mismo Router que el PC Servidor):**
-  ```text
-  192.168.1.80
-  ```
-  *(Latencia de 1 ms en tu red local).*
-
-* **Opción C — Conexión mediante Tailscale VPN P2P:**
-  * Para **Reino 1 JainaCore** (Host Darck Perú): `100.81.210.121`
-  * Para **Reino 3 WanitosGYM** (Host Fran España): `100.98.162.75:8087`
-
-4. Toca en **Save** (Guardar).
-5. Pulsa el botón grande **PLAY** y ¡bienvenido a Azeroth!
+2. Copia dentro tu carpeta `Data/` (con `esES` o `enUS`) y tu archivo `Wow.exe`.
+3. En `Client/WTF/Config.wtf`, asegúrate de incluir:
+   ```text
+   SET gxCursor "0"
+   SET gxWindow "1"
+   SET gxMaximize "1"
+   SET Sound_OutputDriverName "System Default"
+   SET readTOS "1"
+   SET readEULA "1"
+   ```
 
 ---
 
-## 4. Opciones de Rendimiento y Batería (Modo ECO)
+## 4. Configuración de Conexión a los Reinos
 
-* **Modo ECO (40 FPS Cap):**  
-  Altamente recomendado para sesiones prolongadas de juego. Limita el renderizado a 40 cuadros por segundo estables, reduciendo la temperatura del procesador en hasta un 35% y duplicando la duración de la batería. Se activa en **Settings > ECO Mode**.
-* **Driver Gráfico Recomendado:**
-  * **Procesadores Snapdragon (Adreno):** Usa el driver **Turnip 26.1.0** (máxima fluidez y estabilidad gráfica).
-  * **Procesadores MediaTek Dimensity / Mali:** Usa el driver **Vortek 2.1** o **VirGL**.
+| Servidor / Entorno | Realmlist (`realmlist.wtf`) | Descripción |
+| :--- | :--- | :--- |
+| **Reino 1: Global Anycast** | `set realmlist ambulance-ergonomic.tun.ply.gg` | **Recomendado fuera de casa:** Juega con 4G/5G sin VPN. |
+| **Reino 1: WiFi Local Casa** | `set realmlist 192.168.1.80` | **En el hogar:** Máxima velocidad y latencia ultrabaja (1 ms). |
+| **Reino 3: WanitosGYM** | `set realmlist 100.98.162.75:8087` | **Nodo España:** Cap 80 ICC / WotLK progresivo. |
+
+---
+
+## 5. Solución de Problemas Frecuentes
+
+* **La app se cierra en la pantalla de carga:**  
+  *Causa:* Falta de memoria RAM en el dispositivo por haber copiado parches HD de PC (`patch-A` a `patch-G`).  
+  *Solución:* Elimina los parches HD opcionales en `/sdcard/WoW-Imito/Client/Data/` dejando solo los archivos canónicos (`common.MPQ`, `common-2.MPQ`, `expansion.MPQ`, `lichking.MPQ`, `patch.MPQ`, `patch-2.MPQ`, `patch-3.MPQ`).
+* **El cursor táctil no responde o parpadea:**  
+  *Solución:* Abre `WTF/Config.wtf` y verifica que esté configurado `SET gxCursor "0"`.
+* **Error de permisos al iniciar:**  
+  *Solución:* Concede manualmente el permiso "Acceso a todos los archivos" en los Ajustes de Android para la aplicación.
