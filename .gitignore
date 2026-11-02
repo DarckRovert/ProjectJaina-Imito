@@ -1,0 +1,27 @@
+# ProjectJaina-Imito .gitignore
+
+# Android build outputs & binaries
+*.apk
+*.ap_
+*.dex
+*.class
+*.idsig
+
+# Intermediate caches
+.gradle/
+build/
+apktool_build/
+*.log
+*.tmp
+
+# Keystore secrets (preserve keys locally, never commit production private keys)
+*.jks
+*.keystore
+!jaina_release.keystore.example
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+*.swp
