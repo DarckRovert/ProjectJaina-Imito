@@ -31,27 +31,38 @@
 
 | Archivo | Versión | Tamaño | Descripción / Enlace |
 | :--- | :---: | :---: | :--- |
-| [**`ProjectJaina-Imito-v1.0.apk`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.0/ProjectJaina-Imito-v1.0.apk) | **v1.0** | **430.76 MB** | Cliente Oficial Android (Firma v3 / SHA-256: `A3BC...5F00`) |
-| [**`ProjectJaina-Imito-Asistente-USB.zip`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.0/ProjectJaina-Imito-Asistente-USB.zip) | **v1.0** | **4.18 MB** | Asistente Automatizado 1-Clic para Windows (ADB Embebido) |
+| [**`ProjectJaina-Imito-v1.1.apk`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.1/ProjectJaina-Imito-v1.1.apk) | **v1.1** | **430.79 MB** | Cliente Oficial Android con Auto-Descarga 1-Tap (Firma v3 / SHA-256: `E649...332A`) |
+| [**`04_Cliente_Android_ProjectJaina_v1.0.zip`**](https://darckrovert.github.io/ProjectJaina_Web/downloads/04_Cliente_Android_ProjectJaina_v1.0.zip) | **v1.0** | **16.23 GB** | Paquete de Datos Canónico WotLK 3.3.5a para Móviles (SHA-256: `0a9b...6c86`) |
+| [**`ProjectJaina-Imito-Asistente-USB.zip`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.0/ProjectJaina-Imito-Asistente-USB.zip) | **v1.0** | **4.18 MB** | Asistente Opcional 1-Clic para Windows (Transferencia USB con ADB Embebido) |
 
-> 🏷️ **GitHub Release Oficial:** [**Releases v1.0**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/tag/v1.0)  
+> 🏷️ **GitHub Release Oficial:** [**Releases v1.1**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/tag/v1.1)  
 > 🌐 **Portal Web Oficial:** [**darckrovert.github.io/ProjectJaina_Web**](https://darckrovert.github.io/ProjectJaina_Web/#juego-movil)
 
 ---
 
 ## 🚀 Métodos de Instalación
 
-### Método A: Asistente Automatizado por USB para PC (Recomendado - 2 Minutos)
+### Método 1: Despliegue 100% Autónomo Móvil (Recomendado — Cero PC y Cero Cables)
+
+1. **Instala la APK:**  
+   Descarga e instala [**`ProjectJaina-Imito-v1.1.apk`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.1/ProjectJaina-Imito-v1.1.apk) directamente desde el navegador de tu teléfono o tablet.
+2. **Concede el Permiso:**  
+   Al abrir la app por primera vez, pulsa el interruptor para permitir **"Acceso a todos los archivos"** cuando Android te lo solicite.
+3. **Descarga con 1 Toque:**  
+   La app abrirá la ventana oficial de Project Jaina con la URL precargada. Pulsa **`[Descargar Juego]`**.  
+   * La descarga y descompresión se realizan en segundo plano vía streaming HTTP 206 (puedes minimizar la app o bloquear la pantalla).
+4. **¡A Jugar!**  
+   Una vez completada la barra de progreso, la app reconocerá el cliente automáticamente. Pulsa **`PLAY`** y conéctate al reino.
+
+### Método 2: Asistente Automatizado por USB para PC (Alternativa si no tienes WiFi en el móvil)
 
 1. Conecta tu teléfono Android al PC mediante cable USB con la **Depuración USB** activada.
 2. Descarga y descomprime [**`ProjectJaina-Imito-Asistente-USB.zip`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.0/ProjectJaina-Imito-Asistente-USB.zip).
 3. Haz doble clic en `Instalador_ProjectJaina_Android.bat`.
-   * El asistente detectará tu teléfono, instalará la APK oficial, concederá el permiso de almacenamiento automáticamente y te permitirá elegir entre:
-     * **Modo Móvil Óptimo (~16 GB - Recomendado):** 60 FPS estables, cero cierres por falta de RAM y batería duradera.
-     * **Modo HD Completo (~36 GB):** Texturas de PC para smartphones de gama alta.
-4. Desconecta el cable, abre la aplicación en tu móvil y ¡a jugar!
+   * El asistente detectará tu teléfono, instalará la APK oficial, concederá el permiso de almacenamiento automáticamente y transferirá los datos por cable sin gastar conexión de internet.
+4. Desconecta el cable, abre la aplicación en tu móvil y pulsa `PLAY`.
 
-### Método B: Instalación Manual
+### Método 3: Instalación Manual
 
 1. **Instala la APK:**  
    Descarga e instala `ProjectJaina-Imito-v1.0.apk`. Concede el permiso **"Acceso a todos los archivos"** en *Ajustes > Aplicaciones > Acceso especial*.

@@ -1,4 +1,15 @@
-# Notas de la Versión — ProjectJaina-Imito v1.0 (Oficial)
+# Notas de la Versión — ProjectJaina-Imito (Oficial)
+
+## 🚀 Resumen de la Versión 1.1 (2026-11-02) — Despliegue Móvil Autónomo 1-Tap (Cero PC / Cero Cables)
+
+**ProjectJaina-Imito v1.1** introduce la arquitectura de instalación completamente autónoma para smartphones y tabletas Android, eliminando al 100% la necesidad de ordenadores, cables USB y depuración ADB:
+
+1. **Preset Soberano Embebido:** La pantalla de bienvenida de la APK ahora incorpora la preconfiguración oficial de Project Jaina en español (`Project Jaina - Datos del Juego`), con la URL oficial de descarga pre-rellenada y botón de acción directa `[Descargar Juego]`.
+2. **Streaming por Rangos HTTP 206:** Integración con el motor de streaming nativo de WoW-Imito (`RemoteZipChannel` + `PublicZipInstaller`), desempaquetando los 16.23 GB directamente en el almacenamiento interno sin requerir duplicación de espacio (ahorro de 16 GB en el teléfono).
+3. **Resistencia a Caídas y Modo Ahorro:** La descarga corre en segundo plano mediante `JobScheduler` (Android 14+) o `ForegroundService` con `WakeLock`, permitiendo apagar la pantalla o minimizar la app sin interrumpir la transferencia, con capacidad de reanudación automática.
+4. **Paquete Canónico Optimizado:** Lanzamiento del paquete `04_Cliente_Android_ProjectJaina_v1.0.zip` (16.23 GB, SHA-256: `0a9b099fe99a4abafcf729d1aa52736739cecf23e6db8ed48b7543b887596c86`) con `Config.wtf` calibrado para 40 FPS, D3D9 y Anycast WAN (`ambulance-absurd.tun.ply.gg:58735`).
+
+---
 
 ## 🌟 Resumen de la Versión 1.0 (2026-11-02)
 
