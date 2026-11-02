@@ -30,10 +30,10 @@
 
 | Archivo | Versión | Tamaño | Suma de Verificación SHA-256 |
 | :--- | :---: | :---: | :--- |
-| **`ProjectJaina-Imito-v1.0.apk`** | **v1.0** | **430.76 MB** | `A3BC068BC2FDBAB8AEDBC198E01AB4F55D83414A27CEE03EE8618FF59C875F00` |
+| [**`ProjectJaina-Imito-v1.0.apk`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.0/ProjectJaina-Imito-v1.0.apk) | **v1.0** | **430.76 MB** | `A3BC068BC2FDBAB8AEDBC198E01AB4F55D83414A27CEE03EE8618FF59C875F00` |
 
-> Los instaladores se encuentran publicados en el directorio local:
-> 👉 [`releases/ProjectJaina-Imito-v1.0.apk`](releases/ProjectJaina-Imito-v1.0.apk)
+> 📦 **Descarga Directa HTTPS:** [**ProjectJaina-Imito-v1.0.apk**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.0/ProjectJaina-Imito-v1.0.apk)  
+> 🏷️ **GitHub Release Oficial:** [**Releases v1.0**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/tag/v1.0)
 
 ---
 
