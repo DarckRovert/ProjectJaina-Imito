@@ -1,4 +1,4 @@
-# ==============================================================================
+﻿# ==============================================================================
 # PROJECT JAINA: ASISTENTE INSTALADOR AUTOMATIZADO 1-CLIC PARA ANDROID
 # ==============================================================================
 # Arquitectura: PowerShell Nativo + ADB Embebido (Cero Dependencias de Terceros)
