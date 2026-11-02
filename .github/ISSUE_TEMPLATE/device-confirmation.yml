@@ -1,0 +1,41 @@
+name: Confirmación de Dispositivo Compatible
+description: Confirma un nuevo modelo de teléfono, tableta o consola portátil compatible con ProjectJaina-Imito.
+title: "[Device] "
+labels: [device-confirmation]
+body:
+  - type: markdown
+    attributes:
+      value: "¡Gracias por ayudar a expandir la lista de dispositivos confirmados para jugar a Project Jaina en movilidad!"
+  - type: input
+    id: device
+    attributes:
+      label: Modelo exacto del dispositivo
+      placeholder: "Ej: Samsung Galaxy S24 Ultra, AYN Odin 2 Pro, Xiaomi Pad 6, Motorola Edge 50 Pro"
+    validations:
+      required: true
+  - type: input
+    id: soc_gpu
+    attributes:
+      label: Procesador (SoC) y GPU
+      placeholder: "Ej: Snapdragon 8 Gen 2 (Adreno 740), Dimensity 8300-Ultra (Mali-G615)"
+    validations:
+      required: true
+  - type: input
+    id: ram
+    attributes:
+      label: Memoria RAM
+      placeholder: "Ej: 8 GB RAM, 12 GB RAM, 16 GB RAM"
+    validations:
+      required: true
+  - type: input
+    id: driver
+    attributes:
+      label: Driver Gráfico Recomendado
+      placeholder: "Ej: Turnip 26.1.0 (60 FPS estables)"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Rendimiento observado y observaciones
+      placeholder: "FPS promedio en Dalaran y en mundo abierto, temperatura, duración de batería con Modo ECO..."

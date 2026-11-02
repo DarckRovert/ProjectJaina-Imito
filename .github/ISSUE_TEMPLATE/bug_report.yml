@@ -1,0 +1,67 @@
+name: Reporte de Error o Rendimiento
+description: Reporta un problema técnico de ProjectJaina-Imito en tu dispositivo móvil o tableta.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Antes de enviar un reporte, revisa los problemas existentes. Nunca incluyas contraseñas, correos de cuenta ni datos sensibles en capturas o logs."
+  - type: dropdown
+    id: realm
+    attributes:
+      label: Reino de Conexión
+      options:
+        - Reino 1 — JainaCore (Vanilla Cap 60 / Perú)
+        - Reino 3 — WanitosGYM (WotLK ICC Cap 80 / España)
+        - Conexión Remota Playit Global
+        - Red Local WiFi / LAN
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Tipo de problema
+      options:
+        - Instalación o arranque
+        - Archivos de juego (Carpeta Data)
+        - Gráficos, shaders o cierre inesperado (Crash)
+        - Rendimiento / Caída de FPS
+        - Controles táctiles o mandos Bluetooth (ConsolePort)
+        - Otro
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Modelo del Dispositivo
+      placeholder: "Ej: Samsung Galaxy S23 Ultra, AYN Odin 2, POCO F5 Pro, Xiaomi Pad 6"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Versión de Android
+      placeholder: "Ej: Android 13 (One UI 5.1), Android 14 (HyperOS), Android 15"
+    validations:
+      required: true
+  - type: input
+    id: gpu_driver
+    attributes:
+      label: Driver Gráfico Utilizado
+      placeholder: "Ej: Turnip 26.1.0 (Adreno), Vortek 2.1 (Vulkan), VirGL (Mali)"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Pasos para reproducir el fallo
+      description: "Describe paso a paso qué acciones causaron el problema."
+      placeholder: "1. Abrir la app...\n2. Pulsar JUGAR...\n3. Aparece el error..."
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Resultado esperado vs Resultado obtenido
+    validations:
+      required: true
