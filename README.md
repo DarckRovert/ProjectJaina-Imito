@@ -31,8 +31,8 @@
 
 | Archivo | Versión | Tamaño | Descripción / Enlace |
 | :--- | :---: | :---: | :--- |
-| [**`ProjectJaina-Imito-v1.1.apk`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.1/ProjectJaina-Imito-v1.1.apk) | **v1.1** | **430.79 MB** | Cliente Oficial Android con Auto-Descarga 1-Tap (Firma v3 / SHA-256: `E649...332A`) |
-| [**`04_Cliente_Android_ProjectJaina_v1.0.zip`**](https://darckrovert.github.io/ProjectJaina_Web/downloads/04_Cliente_Android_ProjectJaina_v1.0.zip) | **v1.0** | **16.23 GB** | Paquete de Datos Canónico WotLK 3.3.5a para Móviles (SHA-256: `0a9b...6c86`) |
+| [**`ProjectJaina-Imito-v1.1.apk`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.1/ProjectJaina-Imito-v1.1.apk) | **v1.1** | **430.79 MB** | Cliente Oficial Android con Auto-Descarga 1-Tap (Firma v3 / SHA-256: `B16ECA14...F80B`) |
+| [**`04_Cliente_Android_ProjectJaina_v1.0.zip`**](https://archive.org/download/projectjaina-android-client-v1/04_Cliente_Android_ProjectJaina_v1.0.zip) | **v1.0** | **16.23 GB** | Paquete de Datos Canónico WotLK 3.3.5a para Móviles (archive.org HTTP 206) |
 | [**`ProjectJaina-Imito-Asistente-USB.zip`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.0/ProjectJaina-Imito-Asistente-USB.zip) | **v1.0** | **4.18 MB** | Asistente Opcional 1-Clic para Windows (Transferencia USB con ADB Embebido) |
 
 > 🏷️ **GitHub Release Oficial:** [**Releases v1.1**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/tag/v1.1)  

@@ -19,16 +19,34 @@ Bienvenido a **ProjectJaina-Imito**, la edición móvil oficial de World of Warc
 
 ---
 
-## 2. Método Recomendado: Asistente Automatizado USB 1-Clic (Windows)
+## 2. Método 1 (Recomendado): Despliegue 100% Autónomo Móvil (Cero PC, Cero Cables, Cero ADB)
 
-El método más rápido, seguro y libre de errores. No requiere comandos manuales ni navegar por los menús de ajustes del teléfono.
+El método estándar para jugadores que desean instalar y jugar directamente desde su dispositivo móvil sin necesidad de un ordenador:
+
+1. **Descargar e Instalar la APK v1.1:**
+   * Descarga [**`ProjectJaina-Imito-v1.1.apk`**](https://github.com/DarckRovert/ProjectJaina-Imito/releases/download/v1.1/ProjectJaina-Imito-v1.1.apk) desde el navegador de tu móvil o tablet Android.
+   * Abre la descarga e instálala. Si Android te lo solicita, autoriza "Permitir desde esta fuente".
+2. **Conceder el Permiso de Almacenamiento:**
+   * Al abrir la aplicación por primera vez, el sistema solicitará **"Acceso a todos los archivos"**. Pulsa el interruptor para concederlo (requerido para crear el prefijo Wine y almacenar los datos del cliente).
+3. **Descarga 1-Tap con Streaming HTTP 206:**
+   * La app desplegará automáticamente la ventana oficial de Project Jaina con la URL directa de Internet Archive precargada (`04_Cliente_Android_ProjectJaina_v1.0.zip`).
+   * Pulsa **`[Descargar Juego]`**.
+   * La app descargará y descomprimirá los 16.23 GB del cliente en segundo plano en `/sdcard/WoW-Imito/Client/`. Soporta reanudación automática si se corta la conexión.
+4. **Iniciar el Juego:**
+   * Al completarse la barra al 100%, la app detectará automáticamente el cliente de juego. Pulsa **`PLAY`** y entra a Azeroth.
+
+---
+
+## 3. Método 2: Asistente Automatizado USB 1-Clic para PC (Alternativa sin WiFi)
+
+Ideal si no dispones de conexión WiFi de alta velocidad en el móvil y prefieres transferir los datos desde tu PC mediante cable USB a ~80 MB/s:
 
 1. **Activar Depuración USB en tu Android:**
    * Ve a **Ajustes > Información del Teléfono** y pulsa 7 veces consecutivas sobre **"Número de compilación"**.
    * Ve a **Ajustes > Opciones de desarrollador** y activa **"Depuración USB"**.
 2. **Conectar por USB al PC:**
    * Conecta tu teléfono mediante cable USB a tu PC Windows.
-   * Si aparece en la pantalla del móvil el mensaje *¿Permitir depuración por USB desde este equipo?*, marca **"Permitir siempre"** y pulsa **Aceptar**.
+   * Si aparece el mensaje *¿Permitir depuración por USB desde este equipo?*, marca **"Permitir siempre"** y pulsa **Aceptar**.
 3. **Ejecutar el Asistente:**
    * Haz doble clic en [`Instalador_ProjectJaina_Android.bat`](file:///E:/ProjectJaina_Lab/ProjectJaina-Imito/Instalador_ProjectJaina_Android.bat) (o descomprime `ProjectJaina-Imito-Asistente-USB.zip`).
    * El asistente:
@@ -42,12 +60,12 @@ El método más rápido, seguro y libre de errores. No requiere comandos manuale
 
 ---
 
-## 3. Método Alternativo: Instalación Manual
+## 4. Método 3: Instalación Manual
 
-Si no deseas utilizar el asistente de PC, puedes realizar la instalación de forma manual:
+Si deseas configurar carpetas manualmente o ya tienes un cliente WoW 3.3.5a:
 
 ### Paso 1: Instalar la APK Oficial
-1. Transfiere o descarga el archivo [`ProjectJaina-Imito-v1.0.apk`](file:///E:/ProjectJaina_Lab/ProjectJaina-Imito/releases/ProjectJaina-Imito-v1.0.apk) en tu dispositivo.
+1. Transfiere o descarga el archivo [`ProjectJaina-Imito-v1.1.apk`](file:///E:/ProjectJaina_Lab/ProjectJaina-Imito/releases/ProjectJaina-Imito-v1.1.apk) en tu dispositivo.
 2. Abre tu administrador de archivos y toca el instalador `.apk`.
 3. Concede el permiso **"Permitir desde esta fuente"** y completa la instalación.
 
@@ -74,7 +92,7 @@ Android 12+ requiere permiso de gestión de archivos externa:
 
 ---
 
-## 4. Configuración de Conexión a los Reinos
+## 5. Configuración de Conexión a los Reinos
 
 | Servidor / Entorno | Realmlist (`realmlist.wtf`) | Descripción |
 | :--- | :--- | :--- |
